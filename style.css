@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+      
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(coral), to(rebeccapurple));
+    background: linear-gradient(coral, rebeccapurple);
+    background-size: 200% 100%;
+    border: 10px solid white;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+           
+  } 
+  .grid {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    -webkit-perspective: 600px;
+            perspective: 600px;
+    align-items: auto;
+    padding-left: 10%;       
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 20px;
+    max-width: 290px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .grid div {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    color: transparent;
+    box-shadow:40px 30px 30px -20px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+  }
+  .grid div:nth-child(odd) {
+    -webkit-animation: 1000ms ease-in-out infinite alternate pulse;
+            animation: 1000ms ease-in-out infinite alternate pulse;
+  }
+  .grid div:nth-child(even) {
+    -webkit-animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+            animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+  }
+  
+  @-webkit-keyframes pulse {
+    to {
+      -webkit-transform: translate3d(0px, 0px, -60px);
+              transform: translate3d(0px, 0px, -60px);
+      box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  @keyframes pulse {
+    to {
+      -webkit-transform: translate3d(0px, 0px, -60px);
+              transform: translate3d(0px, 0px, -60px);
+      box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+    }
+  }
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto,
+.mensaje {
+    margin: 20px auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(15, 6, 6);
+    text-transform: lowercase;
+    background-image: url("/imagenes/reloj.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+::placeholder {
+    color: rgb(10, 5, 15);
+}
+
+.texto:focus,
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Encriptar,
+.Desencriptar,
+.copiar,
+.Borrar { 
+    margin: 0 10px;
+    background-color: rgb(241, 128, 47);
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: whitesmoke;
+    cursor:pointer ;
+    height: fit-content;
+    width: 110px;
+    padding: 2px;
+}
+
+
+.enc {
+    padding-top: 20px;
+    color: rgb(10, 0, 0);  
+    font-size: 50px;
+    text-align: center;
+}
+.informacion {
+    
+    color: rgb(252, 245, 245);
+    font-size: small;
+}
+
+.pie {
+    margin-top: 20px;
+    color: rgb(250, 244, 244);
+    font-size: smaller;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: normal;
+    text-align: center;
+}
+.pie a{
+    color: rgb(240, 243, 247);
+    text-transform: uppercase;
+
+}
+.pie img{
+    width: 25px;
+
+    
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Sankofa+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Sankofa+Display&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+
+    </head>
+    <main>
+        <header class="enc">challenge alura encriptador</header>
+        <br>
+    <body>
+    <div>
+        <textarea class="texto" cols="20" rows="8" placeholder="Ingrese el texto aquí"></textarea>
+        <button class="Encriptar"   onclick="btnEncriptar()">Encriptar</button>
+        <button class="Desencriptar"   onclick="btnDesencriptar()">Desencriptar</button>
+        
+    </div>
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <div>
+        <textarea class="mensaje" cols="20" rows="8" placeholder="El mensaje aparecerá aquí" readonly></textarea>
+        <button class="copiar"  id="btn_copiar">Copiar</button>
+        <button class="Borrar" onclick="btnBorrar()">Borrar</button>
+    </div>     
+    <script src="script.js"></script>
+</body>
+<footer class="pie">
+    <p class="informacion">Solo letras minúsculas y sin acentos</p>
+    &copy; Bruno carvajal  <a href="https://github.com/bacm280">
+        <img class="git"  src="/imagenes/git.jpeg" alt="logo github" >
+    </a>
+    <a href="https://www.linkedin.com/in/bruno-carvajal-madrid">
+        <img src="/imagenes/linkedin.jpeg" alt="logo linkedin">
+    </a>
+</footer>
+</html>
